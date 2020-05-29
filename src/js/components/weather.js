@@ -32,9 +32,9 @@ export default class Weather {
 
     let windSpeed
     if(this.temperature === 'F') {
-      windSpeed = 'meter/sec';
-    } else {
       windSpeed = 'miles/hour';
+    } else {
+      windSpeed = 'meter/sec';
     }
 
     card.innerHTML = `<span class="today-day-text temperature">${Math.round(data.temp.day)} &deg;${this.temperature}</span>
