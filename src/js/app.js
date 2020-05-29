@@ -144,6 +144,7 @@ export default class App {
   }
 
   changeBackground() {
+    console.log('fetch for background', `https://api.unsplash.com/photos/random?orientation=landscape&per_page=1&client_id=${this.tokens.unsplashToken}&query={nature,${this.getSeason()},${this.getDayTime()}}`)
     fetch(`https://api.unsplash.com/photos/random?orientation=landscape&per_page=1&client_id=${this.tokens.unsplashToken}&query={nature,${this.getSeason()},${this.getDayTime()}}`)
       .then((res) => res.json())
       .then((img) => {
