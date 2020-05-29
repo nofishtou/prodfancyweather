@@ -306,6 +306,7 @@ main{
 
   .location {
     padding: 40px 0px;
+    border-left: none;
   }
 
   .location-city {
