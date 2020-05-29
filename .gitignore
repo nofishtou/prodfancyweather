@@ -1,0 +1,4 @@
+#ignore node_modules and dist
+node_modules/
+dist/
+srs/js/__snapshots__/
