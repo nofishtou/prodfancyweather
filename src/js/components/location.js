@@ -14,7 +14,7 @@ export default class Location {
   }
 
   showLocation(city, lat, lng) {
-    this.city.innerHTML = `<span>${city}</span>`;
+    this.city.innerHTML = `<h1>${city}</h1>`;
     this.geolocation.innerHTML = `<span>Latitude: ${lat.toFixed(2)}</span>  <span>Longitude: ${lng.toFixed(2)}</span>`;
   }
 

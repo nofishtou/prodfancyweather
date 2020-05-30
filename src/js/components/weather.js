@@ -30,15 +30,15 @@ export default class Weather {
     card.classList.add('today-day');
     text.classList.add('text');
 
-    let windSpeed
-    if(this.temperature === 'F') {
-      windSpeed = 'miles/hour';
+    let windSpeed;
+    if (this.temperature === 'F') {
+      windSpeed = 'mph';
     } else {
-      windSpeed = 'meter/sec';
+      windSpeed = 'm/s';
     }
 
-    card.innerHTML = `<span class="today-day-text temperature">${Math.round(data.temp.day)} &deg;${this.temperature}</span>
-    <span "today-day-date">${new Date(data.dt * 1000).toLocaleDateString('en-GR', this.options)}</span>`;
+    card.innerHTML = `<span class="today-day-text temperature">${Math.round(data.temp.day)} &deg;${this.temperature}</span>`
+    + `<span class="today-day-date">${new Date(data.dt * 1000).toLocaleDateString('en-GR', this.options)}</span>`;
     text.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="iconka">`
                     + `</img><span class="text-span"> clouds: ${data.clouds} %</span>`
                     + `<span class="text-span">pressure: ${data.pressure} hPa</span>`

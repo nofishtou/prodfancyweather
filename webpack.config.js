@@ -17,6 +17,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new CopyWebPackPlugin([
+      { from: './assets/font/', to: './assets/font/' },
       { from: './assets/img/', to: './assets/img/' },
       { from: './style/', to: './style/' }
     ])

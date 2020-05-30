@@ -144,7 +144,6 @@ export default class App {
   }
 
   changeBackground() {
-    console.log('fetch for background', `https://api.unsplash.com/photos/random?orientation=landscape&per_page=1&client_id=${this.tokens.unsplashToken}&query={nature,${this.getSeason()},${this.getDayTime()}}`)
     fetch(`https://api.unsplash.com/photos/random?orientation=landscape&per_page=1&client_id=${this.tokens.unsplashToken}&query={nature,${this.getSeason()},${this.getDayTime()}}`)
       .then((res) => res.json())
       .then((img) => {
@@ -205,8 +204,8 @@ export default class App {
                        + '<div class="change-background">'
                        + '<button class="change-background-btn btn">Change Background</button></div>'
                        + '<div class="change-temperature">'
-                       + '<button class="change-temperature-cel btn">C</button>'
-                       + '<button class="change-temperature-fah btn">F</button></div></div>'
+                       + '<button class="change-temperature-cel btn">&deg;C</button>'
+                       + '<button class="change-temperature-fah btn">&deg;F</button></div></div>'
                        + '<div class="form"><form><input type="text" class="form-input" placeholder="Enter city name">'
                        + '<button type="submit" class="btn">Search</button></form></div>';
 
