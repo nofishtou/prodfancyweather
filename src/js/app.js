@@ -15,7 +15,7 @@ export default class App {
     this.temperature = 'C';
     this.tokens = {
       iptoken: '2f27459ab6a3ba',
-      geolocaltoken: '7b96c34a5f6f473db10b95895fd31c5a',
+      geolocaltoken: '6306168bb9b24a10841f27b4c4b9ff3b',
       weathertoken: '237d46de088807b8ea4371af72fb7dbd',
       mapToken: 'pk.eyJ1Ijoibm9maXNodG91IiwiYSI6ImNrYThpODZ1YzBkZTUydG1reHVscjh5Z3kifQ.vVtPGkoBiu5KqcwkuA__hg',
       unsplashToken: 'gROqmf8l2f_eBHE5OD-zSUcCgUV_C4NC0XhdTl3pQM4',
