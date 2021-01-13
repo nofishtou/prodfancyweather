@@ -34,7 +34,12 @@ export default class App {
     this.setActiveBtn();
     this.addEventListeners();
 
-    fetch(`https://ipinfo.io?token=${this.tokens.iptoken}`)
+    fetch(`https://ipinfo.io?token=${this.tokens.iptoken}`,{
+      method: "GET",
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {
